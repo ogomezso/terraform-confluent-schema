@@ -36,3 +36,4 @@ terraform.tfvars
 schemafiles
 .terraform.lock.hcl
 tf.plan
+api-key*

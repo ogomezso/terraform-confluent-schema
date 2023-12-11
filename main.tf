@@ -1,4 +1,7 @@
 module "schema" {
+  providers = {
+    confluent.confluent_cloud = confluent
+  }
   for_each = {for schema in var.schemas : schema.subject_name => schema }
   source = "./schema"
   cluster = var.cluster
